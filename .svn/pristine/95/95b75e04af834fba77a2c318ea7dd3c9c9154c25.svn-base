@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Engine.Models;
+
+namespace Engine.Factories
+{
+    internal  class WorldFactory
+    {
+        internal World createWorld()
+        {
+            World newWorld = new World();
+            newWorld.AddLocation(0, -1, "Home", "This is your home", "C:/Users/boyce/source/repos/SOSCSRPG/Engine/Images/Locations/Home.png");
+            return newWorld;
+        }
+
+    }
+}
