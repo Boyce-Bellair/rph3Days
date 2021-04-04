@@ -94,15 +94,12 @@ namespace Engine.ViewModels
         public GameSession()
         {
 
-            TestA = new TestClass
-            {
-                Test = "newTest"
-            };
+            
             CurrentPlayer = new Player
             {
                 Name = "Scott",
                 CharacterClass = "Fighter",
-                HitPoints = 10,
+                HitPoints = 1000,
                 Gold = 1000000,
                 ExperiencePoints = 0,
                 Level = 1

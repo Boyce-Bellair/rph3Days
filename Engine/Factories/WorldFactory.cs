@@ -8,43 +8,43 @@ namespace Engine.Factories
         {
             World newWorld = new World();
 
-            newWorld.AddLocation(-2, -1, "Farmer's Field",
+            newWorld.AddLocation(-2, -1, "Circular drive",
                 "There are rows of corn growing here, with giant rats hiding between them.",
                 "FarmFields.png");
 
             newWorld.LocationAt(-2, -1).AddMonster(2, 100);
 
-            newWorld.AddLocation(-1, -1, "Farmer's House",
+            newWorld.AddLocation(-1, -1, "Hotel Entrance",
                 "This is the house of your neighbor, Farmer Ted.",
                 "Farmhouse.png");
             newWorld.LocationAt(-1, -1).TraderHere =
                 TraderFactory.GetTraderByName("Farmer Ted");
 
-            newWorld.AddLocation(0, -1, "Home",
+            newWorld.AddLocation(0, -1, "Snowy Trail",
                 "This is your home",
                 "Home.png");
 
-            newWorld.AddLocation(-1, 0, "Trading Shop",
+            newWorld.AddLocation(-1, 0, "Hotel Lobby",
                 "The shop of Susan, the trader.",
                 "Trader.png");
             newWorld.LocationAt(-1, 0).TraderHere =
                 TraderFactory.GetTraderByName("Susan");
 
-            newWorld.AddLocation(0, 0, "Town square",
+            newWorld.AddLocation(0, 0, "Ski Lift",
                 "You see a fountain here.",
                 "TownSquare.png");
 
-            newWorld.AddLocation(1, 0, "Town Gate",
+            newWorld.AddLocation(1, 0, "on the mountain slope",
                 "There is a gate here, protecting the town from giant spiders.",
                 "TownGate.png");
 
-            newWorld.AddLocation(2, 0, "Spider Forest",
+            newWorld.AddLocation(2, 0, "cabin complex",
                 "The trees in this forest are covered with spider webs.",
                 "SpiderForest.png");
 
             newWorld.LocationAt(2, 0).AddMonster(3, 100);
 
-            newWorld.AddLocation(0, 1, "Herbalist's hut",
+            newWorld.AddLocation(0, 1, "Dining Room",
                 "You see a small hut, with plants drying from the roof.",
                 "HerbalistsHut.png");
             newWorld.LocationAt(0, 1).TraderHere =
@@ -52,11 +52,11 @@ namespace Engine.Factories
 
             newWorld.LocationAt(0, 1).QuestsAvailableHere.Add(QuestFactory.GetQuestByID(1));
 
-            newWorld.AddLocation(0, 2, "Herbalist's garden",
+            newWorld.AddLocation(0, 2, "Hallway",
                 "There are many plants here, with snakes hiding behind them.",
                 "HerbalistsGarden.png");
 
-            newWorld.LocationAt(0, 2).AddMonster(1, 100);
+            //newWorld.LocationAt(0, 2).AddMonster(1, 100);
 
             return newWorld;
         }
