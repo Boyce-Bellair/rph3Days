@@ -8,6 +8,7 @@ namespace Engine.Models
     {
         public int XCoordinate { get; set; }
         public int YCoordinate { get; set; }
+        public List<Location> exits { get; set; } = new List<Location>();
         public string Name { get; set; }
         public string Description { get; set; }
         public string ImageName { get; set; }
